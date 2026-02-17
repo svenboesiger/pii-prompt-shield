@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PII Prompt Shield | Privacy Guard for LLM Prompts</title>
+    <meta
+      name="description"
+      content="PII Prompt Shield protects sensitive data before prompts are sent to ChatGPT, Claude, Gemini, and more. Block, review, and redact private info instantly."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#top" class="brand" aria-label="PII Prompt Shield home">
+          <img src="../icons/icon-128.png" alt="PII Prompt Shield logo" />
+          <span>PII Prompt <span class="brand-accent">Shield</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how">How it Works</a></li>
+          <li><a href="#proof">Proof</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="nav-cta" href="#install">Install</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-grid"></div>
+        <div class="hero-orb hero-orb-a"></div>
+        <div class="hero-orb hero-orb-b"></div>
+        <div class="container hero-inner">
+          <p class="eyebrow">Chrome Extension for LLM Privacy</p>
+          <h1>
+            Stop private data
+            <span class="serif">before</span>
+            it reaches the model.
+          </h1>
+          <p class="hero-copy">
+            PII Prompt Shield intercepts prompt sends, detects sensitive data patterns, and lets you block, review, or
+            redact before anything leaks.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#install">Install in 30 seconds</a>
+            <a class="btn btn-secondary" href="#features">See Features</a>
+          </div>
+          <ul class="hero-points">
+            <li>Works on ChatGPT, Claude, Gemini, and more</li>
+            <li>Strict, Balanced, and Lenient detection modes</li>
+            <li>Block + Review or Warn Only workflows</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="stats-wrap">
+        <div class="container stats-grid">
+          <article>
+            <p class="stat-value">10+</p>
+            <p class="stat-label">Sensitive data categories detected</p>
+          </article>
+          <article>
+            <p class="stat-value">3</p>
+            <p class="stat-label">Detection strictness levels</p>
+          </article>
+          <article>
+            <p class="stat-value">2</p>
+            <p class="stat-label">Protection modes for your workflow</p>
+          </article>
+          <article>
+            <p class="stat-value">MV3</p>
+            <p class="stat-label">Modern Chrome extension architecture</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="features" class="section container">
+        <div class="section-head">
+          <p class="eyebrow">What You Get</p>
+          <h2>Protection built for everyday prompting</h2>
+        </div>
+        <div class="card-grid">
+          <article class="feature-card">
+            <h3>Prompt Interception</h3>
+            <p>Hooks into submit buttons, form submits, and Enter key sends on major LLM interfaces.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Deep PII Detection</h3>
+            <p>Detects names, ages, emails, phone numbers, SSNs, addresses, DOBs, cards, IDs, IBANs, and API keys.</p>
+          </article>
+          <article class="feature-card">
+            <h3>False Positive Controls</h3>
+            <p>Balanced mode scores findings and reduces noise from weak, isolated signals.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Code-Aware Screening</h3>
+            <p>Ignores weaker signals inside code blocks while still flagging high-risk secrets.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Site Trust List</h3>
+            <p>Whitelist trusted hosts directly from the extension popup for smoother team workflows.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Transparent UX</h3>
+            <p>Clear &quot;Block + Review&quot; or &quot;Warn Only&quot; prompts so users stay in control at send time.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="how" class="section alt-section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">How It Works</p>
+            <h2>From prompt to protected in 3 steps</h2>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card">
+              <p class="step-no">01</p>
+              <h3>User presses send</h3>
+              <p>The content script intercepts the event before the message leaves the page.</p>
+            </article>
+            <article class="step-card">
+              <p class="step-no">02</p>
+              <h3>Detector scores risks</h3>
+              <p>Regex + contextual rules classify sensitive entities and assign confidence.</p>
+            </article>
+            <article class="step-card">
+              <p class="step-no">03</p>
+              <h3>User chooses action</h3>
+              <p>Block, review, redact, or continue based on your configured privacy mode.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="proof" class="section container">
+        <div class="section-head">
+          <p class="eyebrow">Product Preview</p>
+          <h2>See it in action</h2>
+        </div>
+        <div class="shots-grid">
+          <figure class="shot-card">
+            <img
+              src="../store-assets/screenshots/01-block-review-1280x800.png"
+              alt="Block and review flow in PII Prompt Shield"
+              loading="lazy"
+            />
+            <figcaption>Block + Review modal when PII is detected.</figcaption>
+          </figure>
+          <figure class="shot-card">
+            <img
+              src="../store-assets/screenshots/02-redaction-1280x800.png"
+              alt="Redaction interface for sensitive text"
+              loading="lazy"
+            />
+            <figcaption>Inline redaction suggestions before send.</figcaption>
+          </figure>
+          <figure class="shot-card">
+            <img
+              src="../store-assets/screenshots/03-settings-1280x800.png"
+              alt="Extension settings popup"
+              loading="lazy"
+            />
+            <figcaption>Simple controls for mode, sensitivity, and trusted sites.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="install" class="section install-section">
+        <div class="container install-grid">
+          <div>
+            <p class="eyebrow">Install</p>
+            <h2>Get running locally in under a minute</h2>
+            <ol>
+              <li>Open <code>chrome://extensions</code> and enable Developer mode.</li>
+              <li>Click <strong>Load unpacked</strong>.</li>
+              <li>Select <code>/Users/sven/Code/NodeJS/llm-privacy</code>.</li>
+            </ol>
+          </div>
+          <aside class="install-box">
+            <p class="install-title">Repository Path</p>
+            <code>/Users/sven/Code/NodeJS/llm-privacy</code>
+            <a class="btn btn-primary" href="../README.md">Open Project Docs</a>
+          </aside>
+        </div>
+      </section>
+
+      <section id="faq" class="section container faq-section">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Quick answers</h2>
+        </div>
+        <details>
+          <summary>Does this send my prompt to external servers?</summary>
+          <p>No. Detection is performed locally in the extension runtime.</p>
+        </details>
+        <details>
+          <summary>Can I avoid noisy warnings?</summary>
+          <p>Yes. Use Balanced or Lenient detection and maintain a trusted-site list.</p>
+        </details>
+        <details>
+          <summary>Can I use this on multiple LLM websites?</summary>
+          <p>Yes. The extension supports common LLM interfaces and can be expanded in <code>manifest.json</code>.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>PII Prompt Shield</p>
+        <div>
+          <a href="../legal/privacy-policy.html">Privacy Policy</a>
+          <a href="../README.md">Documentation</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const links = document.getElementById('nav-links');
+
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        links.classList.toggle('open');
+      });
+    </script>
+  </body>
+</html>

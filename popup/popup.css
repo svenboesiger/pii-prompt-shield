@@ -1,0 +1,97 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 330px;
+  background: linear-gradient(145deg, #f8fbff, #eef4fb);
+  color: #152136;
+}
+
+.panel {
+  padding: 14px;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+h2 {
+  margin: 14px 0 8px;
+  font-size: 14px;
+}
+
+.row,
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.field select {
+  width: 170px;
+}
+
+.button {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #7993bb;
+  border-radius: 8px;
+  background: #dce9ff;
+  color: #1b345c;
+  font-weight: 600;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #cfe0ff;
+}
+
+#trustedHosts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 140px;
+  overflow: auto;
+}
+
+#trustedHosts li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  border: 1px solid #d7e2f2;
+  font-size: 12px;
+}
+
+.remove {
+  border: 1px solid #9aaec9;
+  border-radius: 6px;
+  background: #f5f8fd;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 2px 6px;
+}
+
+.hint {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: #425f89;
+}
+
+.status {
+  min-height: 16px;
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #445f88;
+}

@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "PII Prompt Shield",
+  "version": "0.1.3",
+  "description": "Detects and blocks likely private information before it is sent to LLM chat interfaces.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": ["storage", "tabs"],
+  "action": {
+    "default_title": "PII Prompt Shield",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    },
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://*.chatgpt.com/*",
+        "https://claude.ai/*",
+        "https://*.claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://copilot.microsoft.com/*",
+        "https://perplexity.ai/*",
+        "https://*.perplexity.ai/*",
+        "https://poe.com/*",
+        "https://*.poe.com/*",
+        "https://you.com/*",
+        "https://*.you.com/*",
+        "https://character.ai/*",
+        "https://*.character.ai/*",
+        "https://meta.ai/*",
+        "https://*.meta.ai/*",
+        "https://chat.mistral.ai/*",
+        "https://grok.com/*",
+        "https://x.com/*",
+        "https://www.x.com/*"
+      ],
+      "js": ["src/detector.js", "src/content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

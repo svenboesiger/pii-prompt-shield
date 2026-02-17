@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PII Prompt Shield</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <h1>PII Prompt Shield</h1>
+
+      <label class="row">
+        <span>Enabled</span>
+        <input id="enabled" type="checkbox" />
+      </label>
+
+      <label class="field">
+        <span>Behavior</span>
+        <select id="mode">
+          <option value="block">Block + Review</option>
+          <option value="warn">Warn Only</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>Detection</span>
+        <select id="detectionLevel">
+          <option value="strict">Strict (any signal)</option>
+          <option value="balanced">Balanced (recommended)</option>
+          <option value="lenient">Lenient (high confidence)</option>
+        </select>
+      </label>
+
+      <button id="trustCurrent" class="button">Trust Current Site</button>
+
+      <section>
+        <h2>Trusted Sites</h2>
+        <ul id="trustedHosts"></ul>
+      </section>
+
+      <p class="hint">Tip: balanced mode ignores weaker single signals like just a name.</p>
+      <p id="status" class="status"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

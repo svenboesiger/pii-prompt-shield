@@ -1,0 +1,13 @@
+{
+  "name": "pii-prompt-shield",
+  "version": "0.1.3",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "package:chrome": "bash ./scripts/package-chrome-extension.sh",
+    "package:chrome:skip-tests": "bash ./scripts/package-chrome-extension.sh --skip-tests",
+    "package:firefox": "bash ./scripts/package-firefox-extension.sh",
+    "package:firefox:skip-tests": "bash ./scripts/package-firefox-extension.sh --skip-tests",
+    "assets:store": "python3 ./scripts/generate-store-assets.py"
+  }
+}

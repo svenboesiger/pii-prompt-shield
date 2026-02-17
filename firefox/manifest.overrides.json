@@ -1,0 +1,8 @@
+{
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pii-prompt-shield@local",
+      "strict_min_version": "109.0"
+    }
+  }
+}
