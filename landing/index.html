@@ -8,6 +8,7 @@
       name="description"
       content="PII Prompt Shield protects sensitive data before prompts are sent to ChatGPT, Claude, Gemini, and more. Block, review, and redact private info instantly."
     />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +21,24 @@
     <header class="site-header">
       <nav class="nav container">
         <a href="#top" class="brand" aria-label="PII Prompt Shield home">
-          <img src="../icons/icon-128.png" alt="PII Prompt Shield logo" />
+          <span class="brand-icon" aria-hidden="true">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="34" height="34" rx="8" fill="url(#brand-bg)" />
+              <path d="M17 6.5l8.5 3.8v7.2c0 5.2-3.6 9.8-8.5 11-4.9-1.2-8.5-5.8-8.5-11v-7.2L17 6.5z"
+                    fill="none" stroke="url(#brand-shield)" stroke-width="1.8" stroke-linejoin="round" />
+              <path d="M13.2 17.4l2.4 2.4 5.2-5.2" stroke="#8acc1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <defs>
+                <linearGradient id="brand-bg" x1="0" y1="0" x2="34" y2="34">
+                  <stop offset="0%" stop-color="#153126" />
+                  <stop offset="100%" stop-color="#0e201a" />
+                </linearGradient>
+                <linearGradient id="brand-shield" x1="17" y1="6" x2="17" y2="28">
+                  <stop offset="0%" stop-color="#8acc1a" />
+                  <stop offset="100%" stop-color="#5a8a12" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
           <span>PII Prompt <span class="brand-accent">Shield</span></span>
         </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
@@ -33,6 +51,7 @@
           <li><a href="#how">How it Works</a></li>
           <li><a href="#proof">Proof</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a href="https://github.com/svenboesiger/pii-prompt-shield" target="_blank" rel="noopener">GitHub</a></li>
           <li><a class="nav-cta" href="#install">Install</a></li>
         </ul>
       </nav>
@@ -59,7 +78,7 @@
             <a class="btn btn-secondary" href="#features">See Features</a>
           </div>
           <ul class="hero-points">
-            <li>Works on ChatGPT, Claude, Gemini, and more</li>
+            <li>Works on ChatGPT, Claude, Gemini, Copilot, Perplexity, Grok, and more</li>
             <li>Strict, Balanced, and Lenient detection modes</li>
             <li>Block + Review or Warn Only workflows</li>
           </ul>
@@ -69,7 +88,7 @@
       <section class="stats-wrap">
         <div class="container stats-grid">
           <article>
-            <p class="stat-value">10+</p>
+            <p class="stat-value">11</p>
             <p class="stat-label">Sensitive data categories detected</p>
           </article>
           <article>
@@ -111,7 +130,7 @@
           </article>
           <article class="feature-card">
             <h3>Site Trust List</h3>
-            <p>Whitelist trusted hosts directly from the extension popup for smoother team workflows.</p>
+            <p>Whitelist trusted hosts directly from the extension popup to reduce alert fatigue on sites you use daily.</p>
           </article>
           <article class="feature-card">
             <h3>Transparent UX</h3>
@@ -135,7 +154,7 @@
             <article class="step-card">
               <p class="step-no">02</p>
               <h3>Detector scores risks</h3>
-              <p>Regex + contextual rules classify sensitive entities and assign confidence.</p>
+              <p>Regex + contextual rules classify sensitive entities and calculate a risk score.</p>
             </article>
             <article class="step-card">
               <p class="step-no">03</p>
@@ -154,7 +173,7 @@
         <div class="shots-grid">
           <figure class="shot-card">
             <img
-              src="../store-assets/screenshots/01-block-review-1280x800.png"
+              src="assets/01-block-review-1280x800.png"
               alt="Block and review flow in PII Prompt Shield"
               loading="lazy"
             />
@@ -162,7 +181,7 @@
           </figure>
           <figure class="shot-card">
             <img
-              src="../store-assets/screenshots/02-redaction-1280x800.png"
+              src="assets/02-redaction-1280x800.png"
               alt="Redaction interface for sensitive text"
               loading="lazy"
             />
@@ -170,7 +189,7 @@
           </figure>
           <figure class="shot-card">
             <img
-              src="../store-assets/screenshots/03-settings-1280x800.png"
+              src="assets/03-settings-1280x800.png"
               alt="Extension settings popup"
               loading="lazy"
             />
@@ -185,15 +204,15 @@
             <p class="eyebrow">Install</p>
             <h2>Get running locally in under a minute</h2>
             <ol>
+              <li>Clone or download the repository.</li>
               <li>Open <code>chrome://extensions</code> and enable Developer mode.</li>
-              <li>Click <strong>Load unpacked</strong>.</li>
-              <li>Select <code>/Users/sven/Code/NodeJS/llm-privacy</code>.</li>
+              <li>Click <strong>Load unpacked</strong> and select the project folder.</li>
             </ol>
           </div>
           <aside class="install-box">
-            <p class="install-title">Repository Path</p>
-            <code>/Users/sven/Code/NodeJS/llm-privacy</code>
-            <a class="btn btn-primary" href="../README.md">Open Project Docs</a>
+            <p class="install-title">Get the Source</p>
+            <code>git clone https://github.com/svenboesiger/pii-prompt-shield.git</code>
+            <a class="btn btn-primary" href="https://github.com/svenboesiger/pii-prompt-shield" target="_blank" rel="noopener">View on GitHub</a>
           </aside>
         </div>
       </section>
@@ -212,8 +231,8 @@
           <p>Yes. Use Balanced or Lenient detection and maintain a trusted-site list.</p>
         </details>
         <details>
-          <summary>Can I use this on multiple LLM websites?</summary>
-          <p>Yes. The extension supports common LLM interfaces and can be expanded in <code>manifest.json</code>.</p>
+          <summary>Which LLM sites are supported?</summary>
+          <p>ChatGPT, Claude, Gemini, Copilot, Perplexity, Poe, You.com, Character.ai, Meta AI, Mistral Chat, and Grok. More can be added in <code>manifest.json</code>.</p>
         </details>
       </section>
     </main>
@@ -223,7 +242,7 @@
         <p>PII Prompt Shield</p>
         <div>
           <a href="../legal/privacy-policy.html">Privacy Policy</a>
-          <a href="../README.md">Documentation</a>
+          <a href="https://github.com/svenboesiger/pii-prompt-shield" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </footer>
